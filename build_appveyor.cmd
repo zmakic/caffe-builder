@@ -20,6 +20,9 @@ if "%MSVC_TOOLSET%" == "120" (
 if "%MSVC_TOOLSET%" == "140" (
       call "%VS140COMNTOOLS%..\..\VC\vcvarsall.bat" amd64
 )
+if "%MSVC_TOOLSET%" == "141" (
+      call "%VS141COMNTOOLS%..\..\VC\vcvarsall.bat" amd64
+)
 :: Try to call cl.exe
 cl
 if ERRORLEVEL 1 (
